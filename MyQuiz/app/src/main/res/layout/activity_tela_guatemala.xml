@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0A0A"
+    tools:context=".TelaGuatemala">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Que Pais é esse?"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="361dp"
+        android:layout_height="171dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        app:srcCompat="@drawable/guatemala" />
+
+    <RadioGroup
+        android:id="@+id/rdGroupGuatemala"
+        android:layout_width="351dp"
+        android:layout_height="192dp"
+        android:background="#0C0C0C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.051">
+
+        <RadioButton
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0C0C0C"
+            android:text="Gambia"
+            android:textColor="#FDFDFD"
+            android:onClick="OnRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0C0C0C"
+            android:text="Kuwait"
+            android:textColor="#FFFFFF"
+            android:onClick="OnRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0C0C0C"
+            android:text="Nicarágua"
+            android:textColor="#FFFFFF"
+            android:onClick="OnRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/rbGuatemala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0C0C0C"
+            android:minHeight="48dp"
+            android:text="Guatemala"
+            android:textColor="#F8F1F1"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+            android:onClick="OnRadioButtonClicked"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnComfirmaGuatemala"
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:enabled="false"
+        android:onClick="Confirm"
+        android:text="Confirmar Resposta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.887" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

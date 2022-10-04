@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101010"
+    tools:context=".TelaBrasil">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="361dp"
+        android:layout_height="171dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        app:srcCompat="@drawable/brasil" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Que Pais é esse?"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rdGroupBrasil"
+        android:layout_width="360dp"
+        android:layout_height="190dp"
+        android:background="#121111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.137">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0C0C0C"
+            android:onClick="OnRadioButtonClicked"
+            android:text="Afeganistão"
+            android:textColor="#FDFDFD" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0C0C0C"
+            android:text="Angola"
+            android:textColor="#FFFFFF"
+            android:onClick="OnRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/rbBrasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0C0C0C"
+            android:text="Brasil"
+            android:textColor="#FFFFFF"
+            android:onClick="OnRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0C0C0C"
+            android:minHeight="48dp"
+            android:text="Portugal"
+            android:textColor="#FDFCFC"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck"
+            android:onClick="OnRadioButtonClicked"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConfirma"
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:enabled="false"
+        android:onClick="Confirm"
+        android:text="Confirmar Resposta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdGroupBrasil"
+        app:layout_constraintVertical_bias="0.11" />
+</androidx.constraintlayout.widget.ConstraintLayout>
